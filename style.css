@@ -1,17 +1,17 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
 
 body {
   font-family: "Hind Madurai", sans-serif !important;
 }
+
 .font-hind {
   font-family: "Hind Madurai", sans-serif !important;
 }
 
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -20,10 +20,13 @@ html, body {
 
 
   /* Safety: kill horizontal scroll caused by negative translates etc. */
-  html, body { overflow-x: hidden; }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
 
-   nav {
+  nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,26 +37,28 @@ html, body {
   }
 
   /* Emergency Service text */
-  nav > div:first-child {
+  nav>div:first-child {
     width: 100%;
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
-    margin-bottom: 0.5rem; /* space between text and buttons */
+    margin-bottom: 0.5rem;
+    /* space between text and buttons */
   }
 
   /* Buttons container below text */
-  nav > div:last-child {
+  nav>div:last-child {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 1rem; /* space between buttons and banner */
+    margin-bottom: 1rem;
+    /* space between buttons and banner */
   }
 
   /* Individual buttons */
-  nav > div:last-child .btn {
+  nav>div:last-child .btn {
     flex: 1 1 auto;
     min-width: 80px;
     text-align: center;
@@ -67,6 +72,7 @@ html, body {
     align-items: stretch !important;
     gap: 1rem !important;
     min-height: auto !important;
+    overflow-x: hidden !important;
   }
 
   /* 3) CARDS GRID: single column, remove the left margin from container */
@@ -76,6 +82,7 @@ html, body {
     margin-left: 0 !important;
     padding: 0.75rem !important;
     max-width: 100% !important;
+    width: 100% !important;
   }
 
   /* 4) CARD: full-width on mobile, auto height */
@@ -84,6 +91,7 @@ html, body {
     max-width: 480px !important;
     height: auto !important;
     margin-inline: auto !important;
+    box-sizing: border-box !important;
   }
 
   /* Fix the heart’s negative translate so it doesn’t clip on small screens */
@@ -96,6 +104,7 @@ html, body {
     flex-direction: column !important;
     gap: 0.5rem !important;
   }
+
   .card div.flex.gap-2.mt-5 .btn {
     width: 100% !important;
     justify-content: center !important;
@@ -120,9 +129,21 @@ html, body {
     text-align: center !important;
     padding-inline: 0.75rem;
   }
-  .bg-gradient-to-r .text-4xl { font-size: 1.75rem !important; line-height: 2.1rem !important; }
-  .bg-gradient-to-r .text-xl  { font-size: 1rem !important;   line-height: 1.5rem !important; }
+
+  .bg-gradient-to-r .text-4xl {
+    font-size: 1.75rem !important;
+    line-height: 2.1rem !important;
+  }
+
+  .bg-gradient-to-r .text-xl {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
 
   /* 7) IMAGES: scale down safely */
-  img { max-width: 100%; height: auto; display: block; }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
