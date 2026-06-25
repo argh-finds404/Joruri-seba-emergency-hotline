@@ -67,7 +67,7 @@ btn.addEventListener('click',(event)=>{
 
 
 
-// call history section
+//? call history section
 
 function handleToggle(id){
         const forms=document.getElementsByClassName('form')
@@ -82,7 +82,7 @@ function handleToggle(id){
 
 
 
-// call history toggle
+//? call history toggle
 document.getElementById('national-emergency').addEventListener('click',()=>{
     handleToggle('emer');
 });
@@ -128,11 +128,7 @@ document.getElementById('Railway').addEventListener('click',()=>{
 });
 
 
-
-
-
-
-// clear history btn
+//? clear history btn
 
 document.getElementById('clear-history-btn').addEventListener('click', (e) => {
     const cards = document.querySelectorAll("#call-history-container .form");
